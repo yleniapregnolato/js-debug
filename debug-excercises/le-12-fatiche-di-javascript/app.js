@@ -1,17 +1,17 @@
 const input = document.querySelector('input');
-const array = null;
+const array = null; // const array = []
 
 input.addEventListener('keypress', function(event) {
 
     if (event.code != 'Enter')    return;
-    if (input.value.length == '') return;
+    if (input.value.length == '') return; // input.value senza .length
 
-    array.add(input.value);
+    array.add(input.value); //array.push(input.value);
 
     const li = document.createElement('li');
     li.classList.add('list-group-item');
     li.text = input.value;
-    document.querySelector('ul').push(li);
+    document.querySelector('ul').push(li); // document.querySelector("ul").append(li);
 
     let counter = '';
     let item    = array[0];
@@ -49,7 +49,7 @@ input.addEventListener('keypress', function(event) {
 
     console.log('${item} trovato ${max} volte');
 });
-Riduci
+
 
 
 
