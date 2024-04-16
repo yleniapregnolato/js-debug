@@ -84,3 +84,27 @@ console.log(dieselCars);
 
 console.log('Tutte le altre auto');
 console.log(otherCars);
+
+// 1- in questo codice viene prima di tutto definita un'array di oggetti, successivamentre tramite filter si crea un nuovo array dove andranno tutte le macchine con lo stesso type (questo per le tipologie benzina, diesel e altro).
+// 2- errori di sintassi:
+// {
+//     manufacturer: 'Seat',
+//     model: 'Ibiza',
+//     type: 'metano'
+// }
+// manca la virgola alla fine dell'oggetto
+
+// const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+// l'arrow function non è scritta correttamente, la sintassi corretta è:
+// const dieselCars = cars.filter( (auto) => {
+//     auto.type === 'benzina';
+// });
+
+// manca return nel primo e nel secondo filter
+// nell'ultimo filter si deve utilizzare && e non || :
+// const otherCars = cars.filter( (auto) => {
+//     return auto.type !== 'benzina' && auto.type !== 'diesel';
+// });
+// con && prendo in cosiderazione entrambe altrimento con || prenderei in considerazione o una o l'altra
+
+
