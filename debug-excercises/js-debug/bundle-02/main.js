@@ -11,17 +11,17 @@
 
 
 // ESERCIZIO 1
-// function checkAge() {
-//     const myAge = 32;
-//     const message = '';
+function checkAge() {
+    const myAge = 32;
+    const message = '';
 
-//     if (myAge < 18) {
-//         message = `Sei troppo giovane! Hai ${myAge} anni!`;
-//     } else {
-//         message = 'Hai più di 18 anni!';
-//     }
-// }
-// checkAge();
+    if (myAge < 18) {
+        message = `Sei troppo giovane! Hai ${myAge} anni!`;
+    } else {
+        message = 'Hai più di 18 anni!';
+    }
+}
+checkAge();
 
 // 1- questa funzione ci dice se abbiamo più o meno di 18
 // 2- non sono presenti errori di sintassi
@@ -29,11 +29,11 @@
 // l'altro errore è nella costante message, il suo valore cambia nel corso dell'esecuzione del codice quindi bisogna dichiararla con un let
 
 // ESERCIZIO 2
-// function printColorsNumber() {
-//     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-//     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
-// }
-// printColorsNumber();
+function printColorsNumber() {
+    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+    console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
+}
+printColorsNumber();
 
 // 1- questa funzione stampa tutti gli indici dell'array, quindi tutti i colori presenti all'interno
 // 2- c'è un errore di sintassi, lenght è scritto sbagliato, la scrittura corretta è length
@@ -41,13 +41,13 @@
 
 
 // ESERCIZIO 3
-// function addNumbers() {
-//     const userNumber = prompt('Inserisci un numero');
-//     const total = userNumber + 12;
+function addNumbers() {
+    const userNumber = prompt('Inserisci un numero');
+    const total = userNumber + 12;
 
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+    console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
 
 // 1- questa funzione chiede all'utente tramite prompt di inserire un numero e successivamente somma quel numero a 12. ci restituisce il risultato della somma
 // 2- non ci sono errori di sintassi
@@ -55,23 +55,23 @@
 
 
 // // ESERCIZIO 4
-// function checkAccess() {
-//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+function checkAccess() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-//     let grantAccess = 'false';
+    let grantAccess = 'false';
 
-//     if (addresses.includes(userEmail)) {
-//         grantAccess = 'true';
-//     }
+    if (addresses.includes(userEmail)) {
+        grantAccess = 'true';
+    }
 
-//     if (grantAccess === true) {
-//         console.log('Accesso consentito!');
-//     } else {
-//         console.log('Accesso negato!');
-//     }
-// }
-// checkAccess();
+    if (grantAccess === true) {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+}
+checkAccess();
 
 // 1- la funzione scorre l'array per verificare che la mail inserita dall'utente sia presente nell'array e ci restituisce un booleano
 // 2- ci sono errori di sintassi, il true e false vengono inseriti come stringhe quindi la funzione in questo modo non ci restituisce il valore booleano
