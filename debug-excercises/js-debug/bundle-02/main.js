@@ -41,13 +41,13 @@
 
 
 // ESERCIZIO 3
-function addNumbers() {
-    const userNumber = prompt('Inserisci un numero');
-    const total = userNumber + 12;
+// function addNumbers() {
+//     const userNumber = prompt('Inserisci un numero');
+//     const total = userNumber + 12;
 
-    console.log(`Il risultato finale è ${total}`);
-}
-addNumbers();
+//     console.log(`Il risultato finale è ${total}`);
+// }
+// addNumbers();
 
 // 1- questa funzione chiede all'utente tramite prompt di inserire un numero e successivamente somma quel numero a 12. ci restituisce il risultato della somma
 // 2- non ci sono errori di sintassi
@@ -55,24 +55,40 @@ addNumbers();
 
 
 // // ESERCIZIO 4
+function checkAccess() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
+
+    let grantAccess = 'false';
+
+    if (addresses.includes(userEmail)) {
+        grantAccess = 'true';
+    }
+
+    if (grantAccess === true) {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+}
+checkAccess();
+
+// 1- la funzione scorre l'array per verificare che la mail inserita dall'utente sia presente nell'array e ci restituisce un booleano
+// 2- ci sono errori di sintassi, il true e false vengono inseriti come stringhe quindi la funzione in questo modo non ci restituisce il valore booleano
+// la sintassi corretta è 
+
 // function checkAccess() {
 //     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
 //     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-//     let grantAccess = 'false';
-
 //     if (addresses.includes(userEmail)) {
-//         grantAccess = 'true';
-//     }
-
-//     if (grantAccess === true) {
-//         console.log('Accesso consentito!');
+//        console.log("accesso consentito");
 //     } else {
-//         console.log('Accesso negato!');
+//         console.log("accesso negato");
 //     }
+   
 // }
-// checkAccess();
-
+// console.log(checkAccess());
 
 // // ESERCIZIO 5 (suggerimento: c'è un solo errore)
 // function checkAccessImproved() {
