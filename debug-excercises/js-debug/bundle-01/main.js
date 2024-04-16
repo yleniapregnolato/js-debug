@@ -39,6 +39,8 @@ function loopToFive() {
 }
 
 // 1- è una funzione che ci da un ciclo for per stampare numeri inferiori di 5
+// 2- sì sono presenti errori di sintassi in quanto per separare le istruzioni del ciclo non si utilizza la virgole "," . Per fare questa separazione ci occore il punto e virgola ";". il codice corretto è quindi for (let i = 0; i < 5; i++)
+// non ci sono errori di logica
 
 
 
