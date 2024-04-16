@@ -11,17 +11,17 @@
 
 
 // ESERCIZIO 1
-function checkAge() {
-    const myAge = 32;
-    const message = '';
+// function checkAge() {
+//     const myAge = 32;
+//     const message = '';
 
-    if (myAge < 18) {
-        message = `Sei troppo giovane! Hai ${myAge} anni!`;
-    } else {
-        message = 'Hai più di 18 anni!';
-    }
-}
-checkAge();
+//     if (myAge < 18) {
+//         message = `Sei troppo giovane! Hai ${myAge} anni!`;
+//     } else {
+//         message = 'Hai più di 18 anni!';
+//     }
+// }
+// checkAge();
 
 // 1- questa funzione ci dice se abbiamo più o meno di 18
 // 2- non sono presenti errori di sintassi
@@ -29,11 +29,15 @@ checkAge();
 // l'altro errore è nella costante message, il suo valore cambia nel corso dell'esecuzione del codice quindi bisogna dichiararla con un let
 
 // ESERCIZIO 2
-// function printColorsNumber() {
-//     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-//     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
-// }
-// printColorsNumber();
+function printColorsNumber() {
+    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+    console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
+}
+printColorsNumber();
+
+// 1- questa funzione stampa tutti gli indici dell'array, quindi tutti i colori presenti all'interno
+// 2- c'è un errore di sintassi, lenght è scritto sbagliato, la scrittura corretta è length
+// 3- non ci sono errori logici
 
 
 // ESERCIZIO 3
