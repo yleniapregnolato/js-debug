@@ -55,23 +55,23 @@
 
 
 // // ESERCIZIO 4
-function checkAccess() {
-    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-    const userEmail = prompt('Inserisci il tuo indirizzo email');
+// function checkAccess() {
+//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+//     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = 'false';
+//     let grantAccess = 'false';
 
-    if (addresses.includes(userEmail)) {
-        grantAccess = 'true';
-    }
+//     if (addresses.includes(userEmail)) {
+//         grantAccess = 'true';
+//     }
 
-    if (grantAccess === true) {
-        console.log('Accesso consentito!');
-    } else {
-        console.log('Accesso negato!');
-    }
-}
-checkAccess();
+//     if (grantAccess === true) {
+//         console.log('Accesso consentito!');
+//     } else {
+//         console.log('Accesso negato!');
+//     }
+// }
+// checkAccess();
 
 // 1- la funzione scorre l'array per verificare che la mail inserita dall'utente sia presente nell'array e ci restituisce un booleano
 // 2- ci sono errori di sintassi, il true e false vengono inseriti come stringhe quindi la funzione in questo modo non ci restituisce il valore booleano
@@ -86,39 +86,78 @@ checkAccess();
 //     } else {
 //         console.log("accesso negato");
 //     }
-   
+
 // }
 // console.log(checkAccess());
 
 // // ESERCIZIO 5 (suggerimento: c'è un solo errore)
+function checkAccessImproved() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
+
+    let grantAccess = 'false';
+
+    for (let i = 0; i < addresses.length; i++) {
+        const email = addresses[i];
+
+        if (userEmail.length > 5) {
+
+            if (email === userEmail) {
+                grantAccess = 'true';
+
+            }
+
+        }
+    }
+        if (grantAccess) {
+            console.log('Accesso consentito!');
+        } else {
+            console.log('Accesso negato!');
+        }
+    }
+    checkAccessImproved();
+
+// 1- la funzione chiede all'utente la sua mail tramite prompt e verifica se è all'interno dell'array. ci restituisce un booleano
+// 2- ci sono errori di sintassi, il true viene inserito (come precedentemente) come stringa quindi la funzione in questo modo non ci restituisce il valore booleano
+// 3- ci sono errori logici, la condizione:
+// if (grantAccess) {
+//     console.log('Accesso consentito!');
+// } else {
+//     console.log('Accesso negato!');
+// }
+// dovrebbe essere messa fuori da ciclo in modo da stampare il messaggio solo dopo il controllo della funzione
+// funzione corretta:
+
 // function checkAccessImproved() {
 //     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
 
 //     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-//     let grantAccess = 'false';
+//     if (userEmail.length > 5) {
+//         let grantAccess = false;
 
-//     for (let i = 0; i < addresses.length; i++) {
-//         const email = addresses[i];
-
-//         if (userEmail.length > 5) {
+//         for (let i = 0; i < addresses.length; i++) {
+//             const email = addresses[i];
 
 //             if (email === userEmail) {
-//                 grantAccess = 'true';
-
+//                 grantAccess = true;
+//                 break;
 //             }
-
 //         }
+
 
 //         if (grantAccess) {
 //             console.log('Accesso consentito!');
 //         } else {
 //             console.log('Accesso negato!');
 //         }
+//     } else {
+//         console.log("indirizzo non valido");
 //     }
-//     checkAccessImproved();
-
-
+    
+// }
+// console.log(checkAccessImproved());
 
 
 
