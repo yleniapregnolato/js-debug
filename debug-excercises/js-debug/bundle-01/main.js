@@ -14,7 +14,9 @@
 for (let i = 0; i > 5; i++) {
     console.log(i);
 }
-
+// 1- è un ciclo for che incrementa l'indice quando è maggiore di 5
+// 2- non sono presenti errori di sintassi
+// 3- l'errore logico è il ">" in quanto "i" parte da 0 mentre la condizione del ciclo è che "i" sia maggiore di 5, quindi in questi termini il ciclo non verrà mai avviato. Il codice corretto sarebbe (let i = 0; i < 5; i++)
 
 // ESERCIZIO 2
 function addIfEven(num) {
