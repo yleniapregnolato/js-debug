@@ -49,3 +49,21 @@ input.addEventListener('keypress', function(event) {
 
     console.log('${item} trovato ${max} volte');
 });
+Riduci
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

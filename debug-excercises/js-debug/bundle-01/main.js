@@ -56,3 +56,10 @@ function displayEvenNumbers() {
     }
 }
 displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
+
+// 1- questa funzione scorre l'array number e tramite un ciclo for con condizione, se il ciclo trova un numero pari all'interno dell'array lo pusha su una nuova array di una variabile dichiarata precedentemente
+// 2- sì sono presenti errori di sintassi 
+// for (let i = 0; i < numbers.length; i++) devo togliere il ";" finale perchè ho già le parentesi che delimitano la fine della mia istruzione, devo togliere anche -1 o non leggerebbe tutta l'array
+//  if (numbers [i] % 2 === 0); qui non era specificato che ciò che andavamo a prendere nella condizione era l'indice all'interno di numbers, inoltre nella funzione sbagliata c'è l'assegnazione mentre è corretto mettere l'uguaglianza stretta per dire che deve avere resto di zero.
+// evenNumbers.push(numbers [i]); qui bisognava specificare che l'indice era riferito all'array numbers altrimenti non saprebbe da dove prelevarlo
+// return evenNumbers; deve essere posizionato fuori dal ciclo la dentro la funzione
