@@ -29,11 +29,11 @@
 // l'altro errore è nella costante message, il suo valore cambia nel corso dell'esecuzione del codice quindi bisogna dichiararla con un let
 
 // ESERCIZIO 2
-function printColorsNumber() {
-    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
-}
-printColorsNumber();
+// function printColorsNumber() {
+//     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+//     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
+// }
+// printColorsNumber();
 
 // 1- questa funzione stampa tutti gli indici dell'array, quindi tutti i colori presenti all'interno
 // 2- c'è un errore di sintassi, lenght è scritto sbagliato, la scrittura corretta è length
@@ -41,13 +41,17 @@ printColorsNumber();
 
 
 // ESERCIZIO 3
-// function addNumbers() {
-//     const userNumber = prompt('Inserisci un numero');
-//     const total = userNumber + 12;
+function addNumbers() {
+    const userNumber = prompt('Inserisci un numero');
+    const total = userNumber + 12;
 
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+    console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
+
+// 1- questa funzione chiede all'utente tramite prompt di inserire un numero e successivamente somma quel numero a 12. ci restituisce il risultato della somma
+// 2- non ci sono errori di sintassi
+// 3- ci sono errori logici in quanto il prompt andrebbe inserito dentro un parseint per poter fare successivamente la somma. senza questo, infatti, il prompt ci restituisce sempre una stringa
 
 
 // // ESERCIZIO 4
