@@ -11,9 +11,9 @@
 
 
 // ESERCIZIO 1
-for (let i = 0; i > 5; i++) {
-    console.log(i);
-}
+// for (let i = 0; i > 5; i++) {
+//     console.log(i);
+// }
 // 1- è un ciclo for che incrementa l'indice quando è maggiore di 5
 // 2- non sono presenti errori di sintassi
 // 3- l'errore logico è il ">" in quanto "i" parte da 0 mentre la condizione del ciclo è che "i" sia maggiore di 5, quindi in questi termini il ciclo non verrà mai avviato. Il codice corretto sarebbe (let i = 0; i < 5; i++)
@@ -26,24 +26,28 @@ function addIfEven(num) {
     return num;
 }
 
+// 1- è una funzione che ci dice se il numero inserito è pari
+// 2- sono presenti errori di sintassi in quanto scrivere "=" significa fare un'assegnazione quindi stiamo dicendo che il num % 2 è uguale a 0. Noi invece abbiamo bisgno di un operatore di confronto che sia strettamente uguale, quindi di un'indentità. il codice corretto quindi è if (num% 2 === 0)
+// 3- non sono presenti errori logici
+
 
 // ESERCIZIO 3
-function loopToFive() {
-    for (let i = 0, i < 5, i++) {
-        console.log(i);
-    }
-}
+// function loopToFive() {
+//     for (let i = 0, i < 5, i++) {
+//         console.log(i);
+//     }
+// }
 
 
 // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
-function displayEvenNumbers() {
-    let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-    let evenNumbers = [];
-    for (let i = 0; i < numbers.length - 1; i++;) {
-        if (numbers % 2 = 0); {
-            evenNumbers.push(i);
-        }
-        return evenNumbers;
-    }
-}
-displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
+// function displayEvenNumbers() {
+//     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+//     let evenNumbers = [];
+//     for (let i = 0; i < numbers.length - 1; i++;) {
+//         if (numbers % 2 = 0); {
+//             evenNumbers.push(i);
+//         }
+//         return evenNumbers;
+//     }
+// }
+// displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
